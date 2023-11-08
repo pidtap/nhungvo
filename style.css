@@ -66,18 +66,34 @@ svg{
     z-index: 99;
     color: var(--den);
 }
+/* Ảnh Trượt */
+
+.banner .swiper{
+    height: 200px;
+}
+.banner .swiper-slide{
+    background-position: center;
+    background-size: cover;
+}
+.banner .s1{background-image: url(img/s1.webp);}
+.banner .s2{background-image: url(img/s2.webp);}
+.banner .s3{background-image: url(img/s3.webp);}
+.banner .s4{background-image: url(img/s4.webp);}
+
 
 /* Phần thân chính */
 .main-social {
-    /* background-color: var(--bg); */
     padding: var(--size20) var(--size10);
     z-index: 1;
-    /* background-image: linear-gradient(to top, rgb(145, 172, 235),rgb(183, 224, 249),rgb(254, 241, 255)); */
+    position: relative;
 }
 /* Phần avarta */
 .main-social .avarta{
-    /* background-color: aqua; */
+    position: absolute;
+    top: -75px;
     height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .main-social .avarta div{
     width: 150px;
@@ -85,6 +101,7 @@ svg{
     padding: var(--size5);
     border-radius: 50%;
     box-shadow: 0px 0px 5px var(--den);
+    border: solid 1.5px var(--den);
 }
 .main-social .avarta img{
     max-width: 100%;
@@ -92,7 +109,6 @@ svg{
 }
 /* Phần name */
 .main-social .name{
-    /* background-color: bisque; */
     padding: var(--size10);
 }
 .main-social .name span{
@@ -115,7 +131,7 @@ svg{
 /* các liên kết */
 .main-social .social .link{
     align-items: center;
-    background-image: linear-gradient(60deg, rgb(228, 251, 240),rgb(231, 248, 249),rgb(229, 253, 235));
+    background-image: linear-gradient(60deg, rgb(206, 255, 231),rgb(235, 255, 240),rgb(199, 251, 212));
     color: var(--xanh);
     font-weight: 500;
     font-size: var(--size14);
